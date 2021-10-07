@@ -18,7 +18,7 @@ def decode_word(word)
 end
 
 def decode_sentence(msg)
-  words = msg.split('   ').map {|morse|decode_word(morse)}
+  words = msg.split('   ').map { |morse| decode_word(morse) }
   words.join(' ')
 end
 
